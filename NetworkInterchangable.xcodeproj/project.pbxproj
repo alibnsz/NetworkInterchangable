@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411BE7BC2C49681E00278023 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 411BE7BB2C49681E00278023 /* users.json */; };
+		411BE7BE2C49683C00278023 /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BE7BD2C49683C00278023 /* LocalService.swift */; };
+		411BE7C02C496AD400278023 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BE7BF2C496AD400278023 /* NetworkService.swift */; };
 		4168D8CB2C493B6400968C16 /* NetworkInterchangableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168D8CA2C493B6400968C16 /* NetworkInterchangableApp.swift */; };
 		4168D8CD2C493B6400968C16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168D8CC2C493B6400968C16 /* ContentView.swift */; };
 		4168D8CF2C493B6500968C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4168D8CE2C493B6500968C16 /* Assets.xcassets */; };
 		4168D8D22C493B6500968C16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4168D8D12C493B6500968C16 /* Preview Assets.xcassets */; };
+		4168D8DA2C493B9B00968C16 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168D8D92C493B9B00968C16 /* UserModel.swift */; };
+		4168D8DD2C493BB200968C16 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168D8DC2C493BB200968C16 /* Webservice.swift */; };
+		4168D8E02C4941AF00968C16 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168D8DF2C4941AF00968C16 /* UserViewModel.swift */; };
+		4168D8E32C4943E200968C16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168D8E22C4943E200968C16 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411BE7BB2C49681E00278023 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		411BE7BD2C49683C00278023 /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		411BE7BF2C496AD400278023 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4168D8C72C493B6400968C16 /* NetworkInterchangable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInterchangable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4168D8CA2C493B6400968C16 /* NetworkInterchangableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterchangableApp.swift; sourceTree = "<group>"; };
 		4168D8CC2C493B6400968C16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4168D8CE2C493B6500968C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4168D8D12C493B6500968C16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4168D8D92C493B9B00968C16 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4168D8DC2C493BB200968C16 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		4168D8DF2C4941AF00968C16 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4168D8E22C4943E200968C16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,11 @@
 		4168D8C92C493B6400968C16 /* NetworkInterchangable */ = {
 			isa = PBXGroup;
 			children = (
+				411BE7BB2C49681E00278023 /* users.json */,
+				4168D8E12C4943CC00968C16 /* Constants */,
+				4168D8DE2C493BC000968C16 /* ViewModel */,
+				4168D8DB2C493B9F00968C16 /* Service */,
+				4168D8D82C493B8800968C16 /* Model */,
 				4168D8CA2C493B6400968C16 /* NetworkInterchangableApp.swift */,
 				4168D8CC2C493B6400968C16 /* ContentView.swift */,
 				4168D8CE2C493B6500968C16 /* Assets.xcassets */,
@@ -65,6 +84,40 @@
 				4168D8D12C493B6500968C16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4168D8D82C493B8800968C16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4168D8D92C493B9B00968C16 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4168D8DB2C493B9F00968C16 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4168D8DC2C493BB200968C16 /* Webservice.swift */,
+				411BE7BD2C49683C00278023 /* LocalService.swift */,
+				411BE7BF2C496AD400278023 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4168D8DE2C493BC000968C16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4168D8DF2C4941AF00968C16 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4168D8E12C4943CC00968C16 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4168D8E22C4943E200968C16 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411BE7BC2C49681E00278023 /* users.json in Resources */,
 				4168D8D22C493B6500968C16 /* Preview Assets.xcassets in Resources */,
 				4168D8CF2C493B6500968C16 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +192,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4168D8CD2C493B6400968C16 /* ContentView.swift in Sources */,
+				4168D8DA2C493B9B00968C16 /* UserModel.swift in Sources */,
+				411BE7C02C496AD400278023 /* NetworkService.swift in Sources */,
+				4168D8DD2C493BB200968C16 /* Webservice.swift in Sources */,
+				4168D8E02C4941AF00968C16 /* UserViewModel.swift in Sources */,
 				4168D8CB2C493B6400968C16 /* NetworkInterchangableApp.swift in Sources */,
+				411BE7BE2C49683C00278023 /* LocalService.swift in Sources */,
+				4168D8E32C4943E200968C16 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +340,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
